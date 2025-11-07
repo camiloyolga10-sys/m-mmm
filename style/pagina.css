@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* CABECERA */
+#cabecera {
+  background-color: #380404;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #490e03;
+  box-shadow: 0 2px 8px rgba(230, 5, 5, 0.05);
+}
+#cabecera h1 {
+  font-size: 24px;
+  color: #ce1b1b;
+}
+/*menu desplegable*/
+.dropdown {
+  position:relative;
+  z-index: 99;
+
+}
+
+.dropbtn {
+  background-color: #330404;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display:none;
+  position:none;
+  background-color: #ffffff;
+  min-width: 80px;
+  box-shadow: 50px 80px 16px 50px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-content a {
+  color: rgb(43, 6, 6);
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ee6868
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #140746;
+}
+
+
+/* MENÚ */
+#menu {
+  background-color: rgb(71, 16, 2);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.menuprincipal {
+  background-color: rgb(32, 28, 43);
+  display: flex;
+  width: 100px;
+  height: 40px;
+  border: 2px solid rgb(71, 25, 3);
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+}
+
+.menuprincipal a {
+  text-decoration: none;
+  color: rgb(223, 194, 194);
+  font-weight: bold;
+}
+
+.menuprincipal:hover {
+  background-color: rgb(49, 49, 97);
+  box-shadow: 0 4px 8px rgba(63, 30, 30, 0.3);
+}
+
+.menuprincipal:hover a {
+  color: rgb(35, 30, 56);
+}
+
+/* SLIDER */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 30px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 500%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+}
+
+.numbertext {
+  color: white;
+  font-size: 13px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 8px;
+}
+
+/* Botones slider */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  font-size: 20px;
+  color: rgb(88, 3, 3);
+  background-color: rgba(53, 3, 3, 0.5);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(110, 23, 23, 0.8);
+  transform: scale(1.1) translateY(-50%);
+}
+
+.next {
+  right: 20px;
+}
+
+.prev {
+  left: 20px;
+}
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease, transform 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #555;
+  transform: scale(1.2);
+}
+
+/* Fade Animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+
+/* CONTENIDO  */
+.contenido {
+  background-color: #f0f0f0;
+  width: 10%;
+  min-height: 300px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+/*cartas participantes*/
+html{
+  box-sizing: border-box;
+}
+
+
+.columnaintegrantes {
+  width: 25%;
+  margin-bottom: 16px;
+  margin: auto;
+
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.card {
+  background-color: #ebebeb;
+ border-style: groove;
+
+}
+
+.containerintegrantes {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.title {
+  color: rgb(7, 7, 7);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000000;
+  text-align: center;
+  text-decoration: double;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+.row{
+margin: auto;
+display: flex;
+}
+footer {
+text-align: center;
+padding: 10px;
+background-color: #3a0f0f;
+color: rgb(202, 190, 190);
+}
+
+.periodo {
+ display: flex;
+ justify-content: center;
+}

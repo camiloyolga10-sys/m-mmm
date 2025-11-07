@@ -1,0 +1,118 @@
+/* ===== RESETEO BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== ESTILO GENERAL ===== */
+body {
+    font-family: Arial, sans-serif; /* Fuente base */
+    line-height: 1.6; /* Espaciado entre líneas */
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+}
+
+/* ===== MENÚ PRINCIPAL ===== */
+#menu {
+    background-color: #0a0a0a; /* Fondo negro */
+    padding: 0 20px;
+}
+
+#menu ul {
+    display: flex; /* Alinea horizontalmente los elementos */
+    list-style: none; /* Sin viñetas */
+    justify-content: flex-end; /* Menú alineado a la derecha */
+    height: 60px;
+    align-items: center; /* Centrar verticalmente */
+}
+
+.menuprincipal {
+    background-color: #ffffff; /* Fondo claro botones */
+    border: 2px solid #f2f1f7;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menuprincipal a {
+    text-decoration: none;
+    color: #b63d3d;
+    font-size: 14px;
+    padding: 8px 15px;
+    display: block;
+}
+
+.menuprincipal:hover {
+    background-color: #0d0d0e;
+}
+
+.menuprincipal:hover a {
+    color: rgb(85, 28, 28);
+}
+
+/* ===== CABECERA ===== */
+#cabecera {
+    background-color: #b4b0b0; /* Fondo blanco */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #271111;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Sombra ligera */
+}
+
+#cabecera h1 {
+    font-size: 30px;
+    color: #4b4747;
+}
+
+/* ===== SECCIONES ===== */
+main {
+    max-width: 10000px; /* Ancho máximo de contenido */
+    margin: auto; /* Centrar */
+    padding: 20px;
+}
+
+section {
+    background: #e49f9f;
+    padding: 15px 20px;
+    margin-bottom: 20px; /* Espacio entre secciones */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+section h2 {
+    margin-bottom: 6px;
+    color: #b43232;
+}
+
+/* ===== LISTAS ===== */
+ul {
+    padding-left: 20px;
+}
+
+/* ===== TABLAS ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #c26969;
+    padding: 866px;
+    text-align: left;
+}
+
+table th {
+    background-color: #7c4242;
+}
+footer {
+text-align: center;
+padding: 10px;
+background-color: #3a0f0f;
+color: rgb(202, 190, 190);
+}
+.periodo {
+ display: flex;
+ justify-content: center;
+}

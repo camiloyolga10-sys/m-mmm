@@ -1,0 +1,122 @@
+/* ===== RESET GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== ESTILO BASE ===== */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    line-height: 1.6; /* Espaciado entre líneas */
+    background-color: #3b0505; /* Fondo claro */
+    color: #271550; /* Texto en gris oscuro */
+}
+
+/* ===== MENÚ PRINCIPAL ===== */
+#menu {
+    background-color: #380a0a; /* Fondo negro */
+    padding: 0 20px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none; /* Quitar viñetas */
+    justify-content: flex-end; /* Menú alineado a la derecha */
+    height: 60px;
+    align-items: center;
+}
+
+.menuprincipal {
+    background-color: #ffffff; /* Botones claros */
+    border: 2px solid #130c3b;
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menuprincipal a {
+    text-decoration: none;
+    color: #000000; /* Texto oscuro */
+    font-size: 14px;
+    padding: 8px 15px;
+    display: block;
+}
+
+.menuprincipal:hover {
+    background-color: #151541; /* Fondo oscuro al pasar */
+}
+
+.menuprincipal:hover a {
+    color: white; /* Texto blanco al pasar */
+}
+
+
+
+/* ===== CABECERA ===== */
+#cabecera {
+    background-color: #691b1b; /* Fondo blanco */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 2px 8px rgba(219, 124, 124, 0.05);
+}
+
+#cabecera h1 {
+    font-size: 26px;
+    color: #e2a0a0;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cada sección con caja blanca */
+section {
+    background: #dfa3a3;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 28px 58px rgba(126, 48, 48, 08.05);
+}
+
+section h2 {
+    margin-bottom: 1px;
+    color: #9c3030;
+}
+
+/* ===== LISTAS ===== */
+ul {
+    margin-left: 10px;
+    list-style-type: none;
+}
+
+/* ===== TABLA ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #3d1717;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0e8e8; /* Fondo gris claro para encabezado */
+}
+footer {
+text-align: center;
+padding: 10px;
+background-color: #3a0f0f;
+color: rgb(202, 190, 190);
+}
+.periodo {
+ display: flex;
+ justify-content: center;
+}
